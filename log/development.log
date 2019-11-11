@@ -1,0 +1,255 @@
+Started POST "/grades" for 127.0.0.1 at 2019-11-11 22:40:45 +0200
+Processing by GradesController#create as HTML
+  Parameters: {"grades"=>"{\"fields\":[\"First name\",\"Surname\",\"ID number\",\"Institution\",\"Department\",\"Email address\",\"Suspended\",\"Last downloaded from this course\"],\"userGrades\":{\"1\":[\"Ахмед Реда Елсаєд Абделсалам\",\"Абделгані\",\"104\",\"\",\"\",\"AkhmedRedaElsaiedAbdelsalam.Abdelhani.BD.2018@lpnu.ua\",\"\",1573504845],\"2\":[\"Антон\",\"Антонюк\",\"94\",\"\",\"\",\"Anton.Antoniuk.KN.2014@lpnu.ua\",\"\",1573504845],\"3\":[\"Іліяс\",\"Асман\",\"79\",\"\",\"\",\"Iliias.Asman.BI.2018@lpnu.ua\",\"\",1573504845],\"4\":[\"Ганна\",\"Бадзюнь\",\"112\",\"\",\"\",\"Hanna.Vlasiuk.MMEz.2017@lpnu.ua\",\"\",1573504845],\"5\":[\"Олег\",\"Балабух\",\"31\",\"\",\"\",\"Oleh.Balabukh.KN.2015@lpnu.ua\",\"\",1573504845],\"6\":[\"Любов\",\"Балашова\",\"121\",\"\",\"\",\"Liubov.Balashova.KNz.2015@lpnu.ua\",\"\",1573504845],\"7\":[\"Галина\",\"Бжезіцька\",\"107\",\"\",\"\",\"Halyna.Vasylyshyn.MXRz.2017@lpnu.ua\",\"\",1573504845],\"8\":[\"Ірина\",\"Білик\",\"114\",\"\",\"\",\"Iryna.Bilyk.BD.2018@lpnu.ua\",\"\",1573504845],\"9\":[\"Мирослава\",\"Білокур\",\"101\",\"\",\"\",\"Myroslava.Shvets.MXRz.2018@lpnu.ua\",\"\",1573504845],\"10\":[\"Анастасія\",\"Болатаєва\",\"60\",\"\",\"\",\"Anastasiia.Bolataieva.MV.2018@lpnu.ua\",\"\",1573504845],\"11\":[\"Ольга\",\"Бубенчик\",\"116\",\"\",\"\",\"Olha.Bubenchyk.MUAz.2018@lpnu.ua\",\"\",1573504845],\"12\":[\"Мохаммед\",\"Ямані\",\"24\",\"\",\"\",\"Mokhammed.Yamani.AR.2018@lpnu.ua\",\"\",1573504845]}}"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 257ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.7) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.7) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.7) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/grades" for 127.0.0.1 at 2019-11-11 22:40:54 +0200
+Processing by GradesController#create as HTML
+  Parameters: {"grades"=>"{\"fields\":[\"First name\",\"Surname\",\"ID number\",\"Institution\",\"Department\",\"Email address\",\"Assignment: Захист проекту (Real)\",\"Assignment: Іспит (Real)\",\"Course total (Real)\",\"Last downloaded from this course\"],\"userGrades\":{\"1\":[\"Ахмед Реда Елсаєд Абделсалам\",\"Абделгані\",\"104\",\"\",\"\",\"AkhmedRedaElsaiedAbdelsalam.Abdelhani.BD.2018@lpnu.ua\",\"-\",\"78.00\",\"75.19\",1573504854],\"2\":[\"Антон\",\"Антонюк\",\"94\",\"\",\"\",\"Anton.Antoniuk.KN.2014@lpnu.ua\",\"-\",\"45.00\",\"52.67\",1573504854],\"3\":[\"Іліяс\",\"Асман\",\"79\",\"\",\"\",\"Iliias.Asman.BI.2018@lpnu.ua\",\"-\",\"100.00\",\"94.66\",1573504854],\"4\":[\"Ганна\",\"Бадзюнь\",\"112\",\"\",\"\",\"Hanna.Vlasiuk.MMEz.2017@lpnu.ua\",\"-\",\"98.00\",\"93.98\",1573504854],\"5\":[\"Олег\",\"Балабух\",\"31\",\"\",\"\",\"Oleh.Balabukh.KN.2015@lpnu.ua\",\"-\",\"34.00\",\"42.86\",1573504854],\"6\":[\"Любов\",\"Балашова\",\"121\",\"\",\"\",\"Liubov.Balashova.KNz.2015@lpnu.ua\",\"-\",\"67.00\",\"63.91\",1573504854],\"7\":[\"Галина\",\"Бжезіцька\",\"107\",\"\",\"\",\"Halyna.Vasylyshyn.MXRz.2017@lpnu.ua\",\"-\",\"55.00\",\"57.14\",1573504854],\"8\":[\"Ірина\",\"Білик\",\"114\",\"\",\"\",\"Iryna.Bilyk.BD.2018@lpnu.ua\",\"-\",\"98.00\",\"90.23\",1573504854],\"9\":[\"Мирослава\",\"Білокур\",\"101\",\"\",\"\",\"Myroslava.Shvets.MXRz.2018@lpnu.ua\",\"-\",\"80.00\",\"78.20\",1573504854],\"10\":[\"Анастасія\",\"Болатаєва\",\"60\",\"\",\"\",\"Anastasiia.Bolataieva.MV.2018@lpnu.ua\",\"-\",\"100.00\",\"94.66\",1573504854],\"11\":[\"Ольга\",\"Бубенчик\",\"116\",\"\",\"\",\"Olha.Bubenchyk.MUAz.2018@lpnu.ua\",\"-\",\"98.00\",\"90.08\",1573504854],\"12\":[\"Мохаммед\",\"Ямані\",\"24\",\"\",\"\",\"Mokhammed.Yamani.AR.2018@lpnu.ua\",\"-\",\"67.00\",\"70.68\",1573504854]}}"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.7) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.7) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.7) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/grades" for 127.0.0.1 at 2019-11-11 22:41:35 +0200
+Processing by GradesController#create as HTML
+  Parameters: {"grades"=>"{\"fields\":[\"First name\",\"Surname\",\"ID number\",\"Institution\",\"Department\",\"Email address\",\"Lesson: Лекция 1. Архітектура та проектування програмного забезпечення. Вступ. (Real)\",\"Assignment: Звіт ЛР1 (Real)\",\"Assignment: Звіт ЛР2 (Real)\",\"Assignment: Звіт ЛР3 (Real)\",\"Lesson: Лекція 3. Cтворення SADT моделей (Real)\",\"Assignment: Звіт ЛР4 (Real)\",\"Assignment: Звіт ЛР5 (Real)\",\"Assignment: Звіт ЛР6 (Real)\",\"Assignment: Перший передзахіст проекту (Real)\",\"Assignment: Звіт ЛР7 (Real)\",\"Assignment: Звіт ЛР8 (Real)\",\"Assignment: Звіт ЛР9 (Real)\",\"Assignment: Звіт ЛР10 (Real)\",\"Assignment: Звіт ЛР11 (Real)\",\"Assignment: Другій передзахіст проекту (Real)\",\"Assignment: Звіт ЛР12 (Real)\",\"Assignment: Звіт ЛР13 (Real)\",\"Assignment: Звіт ЛР14 (Real)\",\"Assignment: Звіт ЛР15 (Real)\",\"Assignment: Звіт ЛР16 (Real)\",\"Assignment: Захист проекту (Real)\",\"Assignment: Іспит (Real)\",\"Course total (Real)\",\"Last downloaded from this course\"],\"userGrades\":{\"1\":[\"Ахмед Реда Елсаєд Абделсалам\",\"Абделгані\",\"104\",\"\",\"\",\"AkhmedRedaElsaiedAbdelsalam.Abdelhani.BD.2018@lpnu.ua\",\"-\",\"1.00\",\"1.00\",\"2.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"-\",\"2.00\",\"1.00\",\"1.00\",\"1.00\",\"1.00\",\"-\",\"1.00\",\"1.00\",\"1.00\",\"1.00\",\"3.00\",\"-\",\"78.00\",\"75.19\",1573504895],\"2\":[\"Антон\",\"Антонюк\",\"94\",\"\",\"\",\"Anton.Antoniuk.KN.2014@lpnu.ua\",\"-\",\"1.00\",\"2.00\",\"2.00\",\"-\",\"2.00\",\"1.00\",\"1.00\",\"-\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"1.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"2.00\",\"-\",\"45.00\",\"52.67\",1573504895],\"3\":[\"Іліяс\",\"Асман\",\"79\",\"\",\"\",\"Iliias.Asman.BI.2018@lpnu.ua\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"1.00\",\"1.00\",\"-\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"2.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"3.00\",\"-\",\"100.00\",\"94.66\",1573504895],\"4\":[\"Ганна\",\"Бадзюнь\",\"112\",\"\",\"\",\"Hanna.Vlasiuk.MMEz.2017@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"1.00\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"2.00\",\"0.00\",\"2.00\",\"2.00\",\"3.00\",\"-\",\"98.00\",\"93.98\",1573504895],\"5\":[\"Олег\",\"Балабух\",\"31\",\"\",\"\",\"Oleh.Balabukh.KN.2015@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"2.00\",\"2.00\",\"1.00\",\"1.00\",\"-\",\"1.00\",\"0.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"34.00\",\"42.86\",1573504895],\"6\":[\"Любов\",\"Балашова\",\"121\",\"\",\"\",\"Liubov.Balashova.KNz.2015@lpnu.ua\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"1.00\",\"0.00\",\"-\",\"1.00\",\"1.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"0.00\",\"1.00\",\"1.00\",\"1.00\",\"-\",\"67.00\",\"63.91\",1573504895],\"7\":[\"Галина\",\"Бжезіцька\",\"107\",\"\",\"\",\"Halyna.Vasylyshyn.MXRz.2017@lpnu.ua\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"1.00\",\"0.00\",\"-\",\"1.00\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"0.00\",\"1.00\",\"1.00\",\"3.00\",\"-\",\"55.00\",\"57.14\",1573504895],\"8\":[\"Ірина\",\"Білик\",\"114\",\"\",\"\",\"Iryna.Bilyk.BD.2018@lpnu.ua\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"0.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"0.00\",\"1.00\",\"1.00\",\"3.00\",\"-\",\"98.00\",\"90.23\",1573504895],\"9\":[\"Мирослава\",\"Білокур\",\"101\",\"\",\"\",\"Myroslava.Shvets.MXRz.2018@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"0.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"0.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"80.00\",\"78.20\",1573504895],\"10\":[\"Анастасія\",\"Болатаєва\",\"60\",\"\",\"\",\"Anastasiia.Bolataieva.MV.2018@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"2.00\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"-\",\"0.00\",\"1.00\",\"1.00\",\"2.00\",\"-\",\"100.00\",\"94.66\",1573504895],\"11\":[\"Ольга\",\"Бубенчик\",\"116\",\"\",\"\",\"Olha.Bubenchyk.MUAz.2018@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"-\",\"1.00\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"0.00\",\"1.00\",\"0.00\",\"1.00\",\"-\",\"98.00\",\"90.08\",1573504895],\"12\":[\"Мохаммед\",\"Ямані\",\"24\",\"\",\"\",\"Mokhammed.Yamani.AR.2018@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"0.00\",\"2.00\",\"0.00\",\"3.00\",\"-\",\"67.00\",\"70.68\",1573504895]}}"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.7) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.7) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.7) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/grades" for 127.0.0.1 at 2019-11-11 22:42:24 +0200
+Processing by GradesController#create as HTML
+  Parameters: {"grades"=>"{\"fields\":[\"First name\",\"Surname\",\"ID number\",\"Institution\",\"Department\",\"Email address\",\"Lesson: Лекция 1. Архітектура та проектування програмного забезпечення. Вступ. (Real)\",\"Assignment: Звіт ЛР1 (Real)\",\"Assignment: Звіт ЛР2 (Real)\",\"Assignment: Звіт ЛР3 (Real)\",\"Lesson: Лекція 3. Cтворення SADT моделей (Real)\",\"Assignment: Звіт ЛР4 (Real)\",\"Assignment: Звіт ЛР5 (Real)\",\"Assignment: Звіт ЛР6 (Real)\",\"Assignment: Перший передзахіст проекту (Real)\",\"Assignment: Звіт ЛР7 (Real)\",\"Assignment: Звіт ЛР8 (Real)\",\"Assignment: Звіт ЛР9 (Real)\",\"Assignment: Звіт ЛР10 (Real)\",\"Assignment: Звіт ЛР11 (Real)\",\"Assignment: Другій передзахіст проекту (Real)\",\"Assignment: Звіт ЛР12 (Real)\",\"Assignment: Звіт ЛР13 (Real)\",\"Assignment: Звіт ЛР14 (Real)\",\"Assignment: Звіт ЛР15 (Real)\",\"Assignment: Звіт ЛР16 (Real)\",\"Assignment: Захист проекту (Real)\",\"Assignment: Іспит (Real)\",\"Course total (Real)\",\"Last downloaded from this course\"],\"userGrades\":{\"1\":[\"Ахмед Реда Елсаєд Абделсалам\",\"Абделгані\",\"104\",\"\",\"\",\"AkhmedRedaElsaiedAbdelsalam.Abdelhani.BD.2018@lpnu.ua\",\"-\",\"1.00\",\"1.00\",\"2.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"-\",\"2.00\",\"1.00\",\"1.00\",\"1.00\",\"1.00\",\"-\",\"1.00\",\"1.00\",\"1.00\",\"1.00\",\"3.00\",\"-\",\"78.00\",\"75.19\",1573504944],\"2\":[\"Антон\",\"Антонюк\",\"94\",\"\",\"\",\"Anton.Antoniuk.KN.2014@lpnu.ua\",\"-\",\"1.00\",\"2.00\",\"2.00\",\"-\",\"2.00\",\"1.00\",\"1.00\",\"-\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"1.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"2.00\",\"-\",\"45.00\",\"52.67\",1573504944],\"3\":[\"Іліяс\",\"Асман\",\"79\",\"\",\"\",\"Iliias.Asman.BI.2018@lpnu.ua\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"1.00\",\"1.00\",\"-\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"2.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"3.00\",\"-\",\"100.00\",\"94.66\",1573504944],\"4\":[\"Ганна\",\"Бадзюнь\",\"112\",\"\",\"\",\"Hanna.Vlasiuk.MMEz.2017@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"1.00\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"2.00\",\"0.00\",\"2.00\",\"2.00\",\"3.00\",\"-\",\"98.00\",\"93.98\",1573504944],\"5\":[\"Олег\",\"Балабух\",\"31\",\"\",\"\",\"Oleh.Balabukh.KN.2015@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"2.00\",\"2.00\",\"1.00\",\"1.00\",\"-\",\"1.00\",\"0.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"34.00\",\"42.86\",1573504944],\"6\":[\"Любов\",\"Балашова\",\"121\",\"\",\"\",\"Liubov.Balashova.KNz.2015@lpnu.ua\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"1.00\",\"0.00\",\"-\",\"1.00\",\"1.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"0.00\",\"1.00\",\"1.00\",\"1.00\",\"-\",\"67.00\",\"63.91\",1573504944],\"7\":[\"Галина\",\"Бжезіцька\",\"107\",\"\",\"\",\"Halyna.Vasylyshyn.MXRz.2017@lpnu.ua\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"1.00\",\"0.00\",\"-\",\"1.00\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"0.00\",\"1.00\",\"1.00\",\"3.00\",\"-\",\"55.00\",\"57.14\",1573504944],\"8\":[\"Ірина\",\"Білик\",\"114\",\"\",\"\",\"Iryna.Bilyk.BD.2018@lpnu.ua\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"0.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"0.00\",\"1.00\",\"1.00\",\"3.00\",\"-\",\"98.00\",\"90.23\",1573504944],\"9\":[\"Мирослава\",\"Білокур\",\"101\",\"\",\"\",\"Myroslava.Shvets.MXRz.2018@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"0.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"0.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"80.00\",\"78.20\",1573504944],\"10\":[\"Анастасія\",\"Болатаєва\",\"60\",\"\",\"\",\"Anastasiia.Bolataieva.MV.2018@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"2.00\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"-\",\"0.00\",\"1.00\",\"1.00\",\"2.00\",\"-\",\"100.00\",\"94.66\",1573504944],\"11\":[\"Ольга\",\"Бубенчик\",\"116\",\"\",\"\",\"Olha.Bubenchyk.MUAz.2018@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"-\",\"1.00\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"0.00\",\"1.00\",\"0.00\",\"1.00\",\"-\",\"98.00\",\"90.08\",1573504944],\"12\":[\"Мохаммед\",\"Ямані\",\"24\",\"\",\"\",\"Mokhammed.Yamani.AR.2018@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"0.00\",\"2.00\",\"0.00\",\"3.00\",\"-\",\"67.00\",\"70.68\",1573504944]}}"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x000055ba9170cca8>
+Did you mean?  try):
+  
+app/controllers/grades_controller.rb:12:in `create'
+Started POST "/grades" for 127.0.0.1 at 2019-11-11 22:43:29 +0200
+Processing by GradesController#create as HTML
+  Parameters: {"grades"=>"{\"fields\":[\"First name\",\"Surname\",\"ID number\",\"Institution\",\"Department\",\"Email address\",\"Lesson: Лекция 1. Архітектура та проектування програмного забезпечення. Вступ. (Real)\",\"Assignment: Звіт ЛР1 (Real)\",\"Assignment: Звіт ЛР2 (Real)\",\"Assignment: Звіт ЛР3 (Real)\",\"Lesson: Лекція 3. Cтворення SADT моделей (Real)\",\"Assignment: Звіт ЛР4 (Real)\",\"Assignment: Звіт ЛР5 (Real)\",\"Assignment: Звіт ЛР6 (Real)\",\"Assignment: Перший передзахіст проекту (Real)\",\"Assignment: Звіт ЛР7 (Real)\",\"Assignment: Звіт ЛР8 (Real)\",\"Assignment: Звіт ЛР9 (Real)\",\"Assignment: Звіт ЛР10 (Real)\",\"Assignment: Звіт ЛР11 (Real)\",\"Assignment: Другій передзахіст проекту (Real)\",\"Assignment: Звіт ЛР12 (Real)\",\"Assignment: Звіт ЛР13 (Real)\",\"Assignment: Звіт ЛР14 (Real)\",\"Assignment: Звіт ЛР15 (Real)\",\"Assignment: Звіт ЛР16 (Real)\",\"Assignment: Захист проекту (Real)\",\"Assignment: Іспит (Real)\",\"Course total (Real)\",\"Last downloaded from this course\"],\"userGrades\":{\"1\":[\"Ахмед Реда Елсаєд Абделсалам\",\"Абделгані\",\"104\",\"\",\"\",\"AkhmedRedaElsaiedAbdelsalam.Abdelhani.BD.2018@lpnu.ua\",\"-\",\"1.00\",\"1.00\",\"2.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"-\",\"2.00\",\"1.00\",\"1.00\",\"1.00\",\"1.00\",\"-\",\"1.00\",\"1.00\",\"1.00\",\"1.00\",\"3.00\",\"-\",\"78.00\",\"75.19\",1573505009],\"2\":[\"Антон\",\"Антонюк\",\"94\",\"\",\"\",\"Anton.Antoniuk.KN.2014@lpnu.ua\",\"-\",\"1.00\",\"2.00\",\"2.00\",\"-\",\"2.00\",\"1.00\",\"1.00\",\"-\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"1.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"2.00\",\"-\",\"45.00\",\"52.67\",1573505009],\"3\":[\"Іліяс\",\"Асман\",\"79\",\"\",\"\",\"Iliias.Asman.BI.2018@lpnu.ua\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"1.00\",\"1.00\",\"-\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"2.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"3.00\",\"-\",\"100.00\",\"94.66\",1573505009],\"4\":[\"Ганна\",\"Бадзюнь\",\"112\",\"\",\"\",\"Hanna.Vlasiuk.MMEz.2017@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"1.00\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"2.00\",\"0.00\",\"2.00\",\"2.00\",\"3.00\",\"-\",\"98.00\",\"93.98\",1573505009],\"5\":[\"Олег\",\"Балабух\",\"31\",\"\",\"\",\"Oleh.Balabukh.KN.2015@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"2.00\",\"2.00\",\"1.00\",\"1.00\",\"-\",\"1.00\",\"0.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"34.00\",\"42.86\",1573505009],\"6\":[\"Любов\",\"Балашова\",\"121\",\"\",\"\",\"Liubov.Balashova.KNz.2015@lpnu.ua\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"1.00\",\"0.00\",\"-\",\"1.00\",\"1.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"0.00\",\"1.00\",\"1.00\",\"1.00\",\"-\",\"67.00\",\"63.91\",1573505009],\"7\":[\"Галина\",\"Бжезіцька\",\"107\",\"\",\"\",\"Halyna.Vasylyshyn.MXRz.2017@lpnu.ua\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"1.00\",\"0.00\",\"-\",\"1.00\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"0.00\",\"1.00\",\"1.00\",\"3.00\",\"-\",\"55.00\",\"57.14\",1573505009],\"8\":[\"Ірина\",\"Білик\",\"114\",\"\",\"\",\"Iryna.Bilyk.BD.2018@lpnu.ua\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"0.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"0.00\",\"1.00\",\"1.00\",\"3.00\",\"-\",\"98.00\",\"90.23\",1573505009],\"9\":[\"Мирослава\",\"Білокур\",\"101\",\"\",\"\",\"Myroslava.Shvets.MXRz.2018@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"0.00\",\"-\",\"2.00\",\"2.00\",\"1.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"0.00\",\"2.00\",\"1.00\",\"2.00\",\"-\",\"80.00\",\"78.20\",1573505009],\"10\":[\"Анастасія\",\"Болатаєва\",\"60\",\"\",\"\",\"Anastasiia.Bolataieva.MV.2018@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"2.00\",\"2.00\",\"-\",\"2.00\",\"1.00\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"-\",\"0.00\",\"1.00\",\"1.00\",\"2.00\",\"-\",\"100.00\",\"94.66\",1573505009],\"11\":[\"Ольга\",\"Бубенчик\",\"116\",\"\",\"\",\"Olha.Bubenchyk.MUAz.2018@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"1.00\",\"-\",\"1.00\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"0.00\",\"1.00\",\"0.00\",\"1.00\",\"-\",\"98.00\",\"90.08\",1573505009],\"12\":[\"Мохаммед\",\"Ямані\",\"24\",\"\",\"\",\"Mokhammed.Yamani.AR.2018@lpnu.ua\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"-\",\"2.00\",\"2.00\",\"2.00\",\"2.00\",\"1.00\",\"-\",\"1.00\",\"0.00\",\"2.00\",\"0.00\",\"3.00\",\"-\",\"67.00\",\"70.68\",1573505009]}}"}
+No template found for GradesController#create, rendering head :no_content
+Completed 204 No Content in 70316ms
+
+
+Started POST "/grades" for 127.0.0.1 at 2019-11-11 22:44:50 +0200
+Processing by GradesController#create as HTML
+  Parameters: {"grades"=>"{\"fields\":[\"First name\",\"Surname\",\"ID number\",\"Institution\",\"Department\",\"Email address\",\"Assignment: Захист проекту (Real)\",\"Assignment: Іспит (Real)\",\"Course total (Real)\",\"Last downloaded from this course\"],\"userGrades\":{\"1\":[\"Ахмед Реда Елсаєд Абделсалам\",\"Абделгані\",\"104\",\"\",\"\",\"AkhmedRedaElsaiedAbdelsalam.Abdelhani.BD.2018@lpnu.ua\",\"-\",\"78.00\",\"75.19\",1573505090],\"2\":[\"Антон\",\"Антонюк\",\"94\",\"\",\"\",\"Anton.Antoniuk.KN.2014@lpnu.ua\",\"-\",\"45.00\",\"52.67\",1573505090],\"3\":[\"Іліяс\",\"Асман\",\"79\",\"\",\"\",\"Iliias.Asman.BI.2018@lpnu.ua\",\"-\",\"100.00\",\"94.66\",1573505090],\"4\":[\"Ганна\",\"Бадзюнь\",\"112\",\"\",\"\",\"Hanna.Vlasiuk.MMEz.2017@lpnu.ua\",\"-\",\"98.00\",\"93.98\",1573505090],\"5\":[\"Олег\",\"Балабух\",\"31\",\"\",\"\",\"Oleh.Balabukh.KN.2015@lpnu.ua\",\"-\",\"34.00\",\"42.86\",1573505090],\"6\":[\"Любов\",\"Балашова\",\"121\",\"\",\"\",\"Liubov.Balashova.KNz.2015@lpnu.ua\",\"-\",\"67.00\",\"63.91\",1573505090],\"7\":[\"Галина\",\"Бжезіцька\",\"107\",\"\",\"\",\"Halyna.Vasylyshyn.MXRz.2017@lpnu.ua\",\"-\",\"55.00\",\"57.14\",1573505090],\"8\":[\"Ірина\",\"Білик\",\"114\",\"\",\"\",\"Iryna.Bilyk.BD.2018@lpnu.ua\",\"-\",\"98.00\",\"90.23\",1573505090],\"9\":[\"Мирослава\",\"Білокур\",\"101\",\"\",\"\",\"Myroslava.Shvets.MXRz.2018@lpnu.ua\",\"-\",\"80.00\",\"78.20\",1573505090],\"10\":[\"Анастасія\",\"Болатаєва\",\"60\",\"\",\"\",\"Anastasiia.Bolataieva.MV.2018@lpnu.ua\",\"-\",\"100.00\",\"94.66\",1573505090],\"11\":[\"Ольга\",\"Бубенчик\",\"116\",\"\",\"\",\"Olha.Bubenchyk.MUAz.2018@lpnu.ua\",\"-\",\"98.00\",\"90.08\",1573505090],\"12\":[\"Мохаммед\",\"Ямані\",\"24\",\"\",\"\",\"Mokhammed.Yamani.AR.2018@lpnu.ua\",\"-\",\"67.00\",\"70.68\",1573505090]}}"}
